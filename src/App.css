@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content{
+  border-radius: 15px;
+/*   box-shadow: 3px 3px 10px rgb(160, 160, 160); */
+  box-shadow: 2px 2px 8px rgb(0, 0, 0, .4);
+  width: 40%;
+  min-width: 200px;
+  text-align: right;
+  padding: 18px;
+  background-color: whitesmoke;
+}
+
+p{
+  text-align: center;
+}
+
+button{
+  border-radius: 50%;
+  padding: 5px 14px;
+  font-size: 25px;
+  border: none;
+  margin-top: 8px;
+  color: whitesmoke;
+  outline: none;
+}
+
+.quote{
+  display: flex;
+  gap: 10px;
+}
+
+.quote i {
+  font-size: 50px;
+
+}
+
+@media only screen and ( max-width: 700px ){
+  .quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .content{
+    text-align: center;
+  }
+}
